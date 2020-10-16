@@ -1,7 +1,4 @@
-A library for Dart developers.
-
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+String extension methods.
 
 ## Usage
 
@@ -11,7 +8,8 @@ A simple usage example:
 import 'package:stringx/stringx.dart';
 
 main() {
-  var awesome = new Awesome();
+  var awesome = 'awesome';
+  print(awesome.notNullAndEmpty());
 }
 ```
 
@@ -19,4 +17,4 @@ main() {
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/FakenMaster/stringx/issues
