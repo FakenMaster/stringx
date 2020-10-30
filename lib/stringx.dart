@@ -4,5 +4,5 @@
 library stringx;
 
 export 'src/stringx_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/listx_base.dart';
+export 'src/intx_base.dart';

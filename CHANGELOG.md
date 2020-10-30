@@ -1,3 +1,6 @@
+## 0.0.4
+- add IntX.tryParse static method.
+
 ## 0.0.3+1
 
 - add List mapWithIndex extension method.

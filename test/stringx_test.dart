@@ -30,4 +30,23 @@ void main() {
     expect([1, 2, 3].mapWithIndex((index, value) => '$index+$value'),
         ['0+1', '1+2', '2+3']);
   });
+
+  test('IntX test', () {
+    expect(IntX.tryParse(12), 12);
+    expect(IntX.tryParse(null,defaultValue: 12), 12);
+    expect(IntX.tryParse('12'), 12);
+    expect(IntX.tryParse('what',defaultValue: 12), 12);
+    expect(IntX.tryParse(ObjectToString(12)), 12);
+  });
+}
+
+class ObjectToString {
+  final int value;
+
+  ObjectToString(this.value);
+
+  @override
+  String toString() {
+    return '$value';
+  }
 }
