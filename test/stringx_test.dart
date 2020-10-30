@@ -5,7 +5,7 @@ void main() {
   group('A group of tests', () {
     setUp(() {});
 
-    test('First Test', () {
+    test('StringX Test', () {
       expect(null.isNullOrEmpty(), isTrue);
       expect(null.notNullAndEmpty(), isFalse);
 
@@ -16,7 +16,7 @@ void main() {
       final trimEmpty = '  ';
       expect(trimEmpty.isNullOrEmpty(), isTrue);
       expect(trimEmpty.isNullOrEmpty(trim: false), isFalse);
-      
+
       expect(trimEmpty.notNullAndEmpty(), isFalse);
       expect(trimEmpty.notNullAndEmpty(trim: false), isTrue);
 
@@ -24,5 +24,10 @@ void main() {
       expect(test.isNullOrEmpty(), isFalse);
       expect(test.notNullAndEmpty(), isTrue);
     });
+  });
+
+  test('ListX test', () {
+    expect([1, 2, 3].mapWithIndex((index, value) => '$index+$value'),
+        ['0+1', '1+2', '2+3']);
   });
 }
