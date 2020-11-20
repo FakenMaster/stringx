@@ -1,6 +1,6 @@
 name: stringx
-description: string extension methods plugin.
-version: 0.0.4
+description: string/list/int extension methods plugin.
+version: 0.0.5
 homepage: https://github.com/FakenMaster/stringx
 
 environment:
