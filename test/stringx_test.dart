@@ -29,13 +29,17 @@ void main() {
   test('ListX test', () {
     expect([1, 2, 3].mapWithIndex((index, value) => '$index+$value'),
         ['0+1', '1+2', '2+3']);
+    expect(ListX.copyList(null, 0), []);
+    expect(ListX.copyList(null, 2), [null, null]);
+    expect(ListX.copyList([1, 2, 3], 1), [1]);
+    expect(ListX.copyList([1, 2, 3], 4), [1, 2, 3, null]);
   });
 
   test('IntX test', () {
     expect(IntX.tryParse(12), 12);
-    expect(IntX.tryParse(null,defaultValue: 12), 12);
+    expect(IntX.tryParse(null, defaultValue: 12), 12);
     expect(IntX.tryParse('12'), 12);
-    expect(IntX.tryParse('what',defaultValue: 12), 12);
+    expect(IntX.tryParse('what', defaultValue: 12), 12);
     expect(IntX.tryParse(ObjectToString(12)), 12);
   });
 }
