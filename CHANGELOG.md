@@ -1,3 +1,6 @@
+## 1.0.0-nullsafety.0
+- support null safety sound.
+
 ## 0.0.6
 - support null safety sound.
 ## 0.0.5
