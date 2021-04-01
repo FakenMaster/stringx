@@ -20,11 +20,12 @@ extension ListX<E> on List<E> {
     return listSize > 0;
   }
 
-  static List<T> copyList<T>(List<T> source, [int len]) {
+  static List<T?> copyList<T>(List<T>? source, [int? len]) {
     final listLength = len ?? source?.length ?? 0;
+
     /// can't omit the type, else the type will infer to List<Null> instead of List<T>
-    final List<T> target = List.filled(listLength, null);
-    if (source.listNotEmpty) {
+    final target = List<T?>.filled(listLength, null);
+    if (source != null && source.listNotEmpty) {
       final iterateLength = min(listLength, source.length);
       for (var i = 0; i < iterateLength; i++) {
         target[i] = source[i];

@@ -6,8 +6,8 @@ void main() {
     setUp(() {});
 
     test('StringX Test', () {
-      expect(null.isNullOrEmpty(), isTrue);
-      expect(null.notNullAndEmpty(), isFalse);
+      // expect(null.isNullOrEmpty(), isTrue);
+      // expect(null.notNullAndEmpty(), isFalse);
 
       final empty = '';
       expect(empty.isNullOrEmpty(), isTrue);
