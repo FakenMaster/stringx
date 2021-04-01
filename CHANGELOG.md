@@ -1,5 +1,7 @@
+## 0.0.6
+- support null safety sound.
 ## 0.0.5
-- add ListX listSize/listEmpty/listNotEmpty/copyList method
+- add ListX listSize/listEmpty/listNotEmpty/copyList method.
 
 ## 0.0.4
 - add IntX.tryParse static method.
